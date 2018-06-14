@@ -1,0 +1,5 @@
+var homePage  = {
+    init: function(){
+        
+    },
+};
