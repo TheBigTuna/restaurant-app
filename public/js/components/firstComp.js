@@ -53,9 +53,9 @@ var Navbar = function (_React$Component) {
             'div',
             { className: 'container' },
             _react2.default.createElement(
-              'a',
-              { className: 'navbar-brand', href: '#' },
-              'Start Bootstrap'
+              'p',
+              { className: 'navbar-brand' },
+              'The Polar Bay'
             ),
             _react2.default.createElement(
               'button',
@@ -177,13 +177,16 @@ var Section1 = function (_React$Component) {
                 _react2.default.createElement(
                   'h2',
                   { className: 'display-4' },
-                  'For those about to rock...'
+                  'Welcome To ',
+                  _react2.default.createElement('br', null),
+                  ' The Polar Bay'
                 ),
                 _react2.default.createElement(
                   'p',
                   null,
                   'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'
-                )
+                ),
+                _react2.default.createElement('div', { className: 'bg-circle-1 bg-circle s1' })
               )
             )
           )
@@ -468,16 +471,7 @@ var Layout = function (_React$Component) {
   _createClass(Layout, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_Navbar2.default, null),
-        _react2.default.createElement(_Header2.default, null),
-        _react2.default.createElement(_Section2.default, null),
-        _react2.default.createElement(_Section4.default, null),
-        _react2.default.createElement(_Section6.default, null),
-        _react2.default.createElement(_Footer2.default, null)
-      );
+      return _react2.default.createElement('div', null);
     }
   }]);
 
@@ -624,7 +618,7 @@ var Header = function (_React$Component) {
               _react2.default.createElement(
                 'h1',
                 { className: 'masthead-heading mb-0' },
-                'One Page Wonder'
+                'The Polar Bay'
               ),
               _react2.default.createElement(
                 'h2',
@@ -637,11 +631,7 @@ var Header = function (_React$Component) {
                 'Learn More'
               )
             )
-          ),
-          _react2.default.createElement('div', { className: 'bg-circle-1 bg-circle' }),
-          _react2.default.createElement('div', { className: 'bg-circle-2 bg-circle' }),
-          _react2.default.createElement('div', { className: 'bg-circle-3 bg-circle' }),
-          _react2.default.createElement('div', { className: 'bg-circle-4 bg-circle' })
+          )
         ),
         _react2.default.createElement(
           'div',

@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Lato';
 }
@@ -48,7 +49,7 @@ h6 {
   letter-spacing: 0.1rem;
 }
 
-  header.masthead {
+header.masthead {
   position: relative;
   overflow: hidden;
   padding-top: calc(7rem + 72px);
@@ -149,7 +150,6 @@ header.masthead .bg-circle-4 {
   top: -5rem;
   right: 35%;
 }
-
 
 
 @media (min-width: 992px) {

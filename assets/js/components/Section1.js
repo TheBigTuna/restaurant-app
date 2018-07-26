@@ -22,8 +22,9 @@ export default class Section1 extends React.Component{
           </div>
           <div className="col-lg-6 order-lg-1">
             <div className="p-5">
-              <h2 className="display-4">For those about to rock...</h2>
+              <h2 className="display-4">Welcome To <br /> The Polar Bay</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+                 <div className="bg-circle-1 bg-circle s1"></div>
             </div>
           </div>
         </div>
