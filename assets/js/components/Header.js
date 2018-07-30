@@ -14,8 +14,8 @@ export default class Header extends React.Component{
       <div className="masthead-content">
         <div className="container">
           <h1 className="masthead-heading mb-0">The Polar Bay</h1>
-          <h2 className="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
-          <a href="#" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+          <h2 className="masthead-subheading mb-0">welcome</h2>
+          {/*<a href="#" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>*/}
         </div>
       </div>
     </header>

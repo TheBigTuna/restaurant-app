@@ -8,6 +8,9 @@ import Section3 from '../components/Section3.js'
 import Footer from '../components/Footer.js'
 
 
+library.add(faStroopwafel)
+
+
 
 
 export default class Layout extends React.Component{

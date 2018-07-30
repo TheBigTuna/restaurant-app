@@ -74,7 +74,7 @@ var Navbar = function (_React$Component) {
                   _react2.default.createElement(
                     'a',
                     { className: 'nav-link', href: '#' },
-                    'Sign Up'
+                    'Menus'
                   )
                 ),
                 _react2.default.createElement(
@@ -83,7 +83,25 @@ var Navbar = function (_React$Component) {
                   _react2.default.createElement(
                     'a',
                     { className: 'nav-link', href: '#' },
-                    'Log In'
+                    'Location'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'nav-item' },
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'nav-link', href: '#' },
+                    'About'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'nav-item' },
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'nav-link', href: '#' },
+                    'Contact'
                   )
                 )
               )
@@ -165,7 +183,7 @@ var Section1 = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'p-5' },
-                _react2.default.createElement('img', { className: 'img-fluid rounded-circle img1', src: '01.jpg', alt: '' })
+                _react2.default.createElement('img', { className: 'img-fluid rounded-circle img1', src: 'https://shiro-restaurant.com/wp-content/uploads/2017/02/salmon-on-the-beach.jpg', alt: '' })
               )
             ),
             _react2.default.createElement(
@@ -184,7 +202,7 @@ var Section1 = function (_React$Component) {
                 _react2.default.createElement(
                   'p',
                   null,
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'
+                  'Our varied menu offers breakfast, lunch, luxury afternoon tea and evening meals based on tapas in addition to other special dishes prepared by our highly skilled kitchen team.'
                 ),
                 _react2.default.createElement('div', { className: 'bg-circle-1 bg-circle s1' })
               )
@@ -266,7 +284,7 @@ var Section2 = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'p-5' },
-                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '02.jpg', alt: '' })
+                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '04.jpg', alt: '' })
               )
             ),
             _react2.default.createElement(
@@ -278,12 +296,12 @@ var Section2 = function (_React$Component) {
                 _react2.default.createElement(
                   'h2',
                   { className: 'display-4' },
-                  'We salute you!'
+                  'Dine With Us!'
                 ),
                 _react2.default.createElement(
                   'p',
                   null,
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'
+                  'The Polar Bay  was built in 1929, a gift from Charles Rogers to his future wife Harriet Thornton and, is a resturant and sushi bar. We specialise in the best produce from Gwynedd, Wales and the world and offer breakfast, lunch, fantastically presented afternoon teas and evening meals based on tapas and other inspirational meals.'
                 )
               )
             )
@@ -364,7 +382,7 @@ var Section3 = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'p-5' },
-                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '03.jpg', alt: '' })
+                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '01.jpg', alt: '' })
               )
             ),
             _react2.default.createElement(
@@ -381,7 +399,7 @@ var Section3 = function (_React$Component) {
                 _react2.default.createElement(
                   'p',
                   null,
-                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.'
+                  'A casual vibe permeates the atmosphere at The Polar Bay\'s, impressive Audio Visual capabilities, an exquisitely landscaped garden patio and special events and perfomances showcasing talent from the metro detroit area'
                 )
               )
             )
@@ -455,6 +473,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+library.add(faStroopwafel);
 
 var Layout = function (_React$Component) {
   _inherits(Layout, _React$Component);
@@ -533,14 +553,17 @@ var Footer = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement('footer', { className: 'py-5 bg-black' }),
         _react2.default.createElement(
-          'div',
-          { className: 'container' },
+          'footer',
+          { className: 'py-5 bg-black' },
           _react2.default.createElement(
-            'p',
-            { className: 'm-0 text-center text-white small' },
-            'Copyright \xA9 Your Website 2018'
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'p',
+              { className: 'm-0 text-center text-white footerText' },
+              '\xA9 2018 Copyright OctaviusMoore. All Rights Reserved.'
+            )
           )
         )
       );
@@ -623,12 +646,7 @@ var Header = function (_React$Component) {
               _react2.default.createElement(
                 'h2',
                 { className: 'masthead-subheading mb-0' },
-                'Will Rock Your Socks Off'
-              ),
-              _react2.default.createElement(
-                'a',
-                { href: '#', className: 'btn btn-primary btn-xl rounded-pill mt-5' },
-                'Learn More'
+                'welcome'
               )
             )
           )
