@@ -23,5 +23,4 @@ export default class Footer extends React.Component{
 const app = document.getElementById('app')
 const footer = document.getElementById('footer')
 
-ReactDOM.render(<Footer />, footer)
 

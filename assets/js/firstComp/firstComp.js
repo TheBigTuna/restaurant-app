@@ -5,13 +5,8 @@ import Header from '../components/Header.js'
 import Section1 from '../components/Section1.js'
 import Section2 from '../components/Section2.js'
 import Section3 from '../components/Section3.js'
+import Maps from '../components/Maps.js'
 import Footer from '../components/Footer.js'
-
-
-library.add(faStroopwafel)
-
-
-
 
 export default class Layout extends React.Component{
     constructor(){
@@ -22,6 +17,13 @@ export default class Layout extends React.Component{
     render(){
       return(
         <div>
+        <Navbar />
+        <Header />
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Maps />
+        <Footer />
         </div>
       )
     }
@@ -29,5 +31,4 @@ export default class Layout extends React.Component{
 
 const app = document.getElementById('app')
 
-ReactDOM.render(<Layout />, app)
-
+ReactDOM.render(<Layout />,app)

@@ -36,5 +36,4 @@ export default class Section2 extends React.Component{
 const app = document.getElementById('app')
 const sec2 = document.getElementById('section2')
 
-ReactDOM.render(<Section2 />, sec2)
 

@@ -38,5 +38,4 @@ export default class Section1 extends React.Component{
 const app = document.getElementById('app')
 const sec1 = document.getElementById('section1')
 
-ReactDOM.render(<Section1 />, sec1)
 

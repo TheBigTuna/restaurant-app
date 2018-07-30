@@ -43,5 +43,4 @@ export default class Navbar extends React.Component{
 const app = document.getElementById('app')
 const nav = document.getElementById('navbar')
 
-ReactDOM.render(<Navbar />, nav)
 
