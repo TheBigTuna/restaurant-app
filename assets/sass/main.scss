@@ -221,25 +221,35 @@ header.masthead .bg-circle-4 {
   border-bottom: 1px solid black;
   padding-bottom: 2rem;
   padding-left: 1rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .menuList li{
   text-transform: uppercase;
   display: inline-block;    
   color: white;
-  background-color: black;
-  font-size: 18px;
-  margin: 6px;
+  background-color: #0D0000;
+  border: 2px solid #0D0000;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 4px;
   padding: 16px;
   height: 60px;
   width: 180px;
   float: left;
   text-align: center;
-  transition: all 0.5s ease;
+  transition: all 0.3s linear;
+  letter-spacing: 2px;
 
 }
 
 .menuList li:hover{
   background-color: #f4a142;
+  border: 2px solid white;
   cursor: pointer;
+}
+
+.imgGroup img{
+  margin: 4px;
 }

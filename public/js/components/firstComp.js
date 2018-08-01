@@ -289,8 +289,11 @@ var Menus = function (_React$Component) {
               { className: 'col-lg-6 order-lg-2' },
               _react2.default.createElement(
                 'div',
-                { className: 'p-5' },
-                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '01.jpg', alt: '' })
+                { className: 'p-5 imgGroup' },
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' }),
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' }),
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' }),
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' })
               )
             ),
             _react2.default.createElement(
@@ -304,7 +307,9 @@ var Menus = function (_React$Component) {
                 _react2.default.createElement(
                   'h2',
                   { className: 'display-4 enjoy' },
-                  'Enjoy! Our Menus'
+                  'Enjoy! ',
+                  _react2.default.createElement('br', null),
+                  'Our Menus'
                 ),
                 _react2.default.createElement(
                   'ul',
