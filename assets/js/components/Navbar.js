@@ -23,10 +23,10 @@ export default class Navbar extends React.Component{
               <a className="nav-link" href="#">Menus</a>
             </li>
             <li className="nav-item">
-    <a className="nav-link" href="#">Location</a>
+    <a className="nav-link" href="#">About</a>
             </li>
              <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="#">Location</a>
             </li>
             <li className="nav-item">
     <a className="nav-link" href="#">Contact</a>

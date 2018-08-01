@@ -212,9 +212,13 @@ var Maps = function (_React$Component) {
     key: 'render',
     value: function render() {
       var markers = this.props.markers || [];
-      return _react2.default.createElement(_reactGoogleMaps.GoogleMap, {
-        defaultZoom: 15,
-        defaultCenter: { lat: 42.446, lng: -82.887 } });
+      return _react2.default.createElement(
+        _reactGoogleMaps.GoogleMap,
+        {
+          defaultZoom: 12,
+          defaultCenter: { lat: 42.416, lng: -82.920 } },
+        _react2.default.createElement(_reactGoogleMaps.Marker, { position: { lat: 42.416, lng: -82.920 } })
+      );
     }
   }]);
 
@@ -311,7 +315,7 @@ var Navbar = function (_React$Component) {
                   _react2.default.createElement(
                     'a',
                     { className: 'nav-link', href: '#' },
-                    'Location'
+                    'About'
                   )
                 ),
                 _react2.default.createElement(
@@ -320,7 +324,7 @@ var Navbar = function (_React$Component) {
                   _react2.default.createElement(
                     'a',
                     { className: 'nav-link', href: '#' },
-                    'About'
+                    'Location'
                   )
                 ),
                 _react2.default.createElement(
