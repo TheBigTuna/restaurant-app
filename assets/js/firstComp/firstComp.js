@@ -1,5 +1,6 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
+import {  withScriptjs, withGoogleMap, GoogleMap, Marker} from 'react-google-maps'
 import Navbar from '../components/Navbar.js'
 import Header from '../components/Header.js'
 import Section1 from '../components/Section1.js'
@@ -13,6 +14,7 @@ export default class Layout extends React.Component{
       super();
       this.state ={name: "Octavius"};
     }
+ 
     
     render(){
       return(
@@ -22,7 +24,10 @@ export default class Layout extends React.Component{
         <Section1 />
         <Section2 />
         <Section3 />
-        <Maps />
+        <Maps 
+        loadingElement={<div style={{ height: `100%` }} />}
+        containerElement={<div style={{ height: `400px` }} />}
+        mapElement={<div style={{ height: `100%` }} />}/>
         <Footer />
         </div>
       )

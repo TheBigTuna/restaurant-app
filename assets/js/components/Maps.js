@@ -1,18 +1,20 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {  withScriptjs, withGoogleMap, GoogleMap, Marker} from 'react-google-maps'
 
-export default class Maps extends React.Component{
+ class Maps extends React.Component{
     constructor(){
       super();
-      this.state ={name: "Octavius",key:"AIzaSyCrARybfJPN_d8JWPnzLPpCHREPQmnMPOc"};
+      this.state ={name: "Octavius"};
     }
     
     render(){
+      let markers = this.props.markers || []
       return(
-        <div>
-       <h1>Maps</h1>
-        </div>
+         <GoogleMap
+    defaultZoom={15}
+    defaultCenter={{ lat: 42.446, lng: -82.887 }}>
+  </GoogleMap>
       )
     }
 }
@@ -21,3 +23,4 @@ const app = document.getElementById('app')
 const maps = document.getElementById('maps')
 
 
+export default withGoogleMap(Maps)
