@@ -6,6 +6,7 @@ import Header from '../components/Header.js'
 import Section1 from '../components/Section1.js'
 import Section2 from '../components/Section2.js'
 import Section3 from '../components/Section3.js'
+import Menus from '../components/Menus.js'
 import Maps from '../components/Maps.js'
 import Footer from '../components/Footer.js'
 
@@ -24,6 +25,7 @@ export default class Layout extends React.Component{
         <Section1 />
         <Section2 />
         <Section3 />
+        <Menus />
         <Maps 
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `400px` }} />}

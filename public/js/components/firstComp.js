@@ -16,7 +16,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -90,7 +90,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -182,7 +182,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -248,7 +248,134 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Menus = function (_React$Component) {
+  _inherits(Menus, _React$Component);
+
+  function Menus() {
+    _classCallCheck(this, Menus);
+
+    var _this = _possibleConstructorReturn(this, (Menus.__proto__ || Object.getPrototypeOf(Menus)).call(this));
+
+    _this.state = { name: "Octavius" };
+    return _this;
+  }
+
+  _createClass(Menus, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'row align-items-center' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6 order-lg-2' },
+              _react2.default.createElement(
+                'div',
+                { className: 'p-5' },
+                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '01.jpg', alt: '' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6 order-lg-1' },
+              _react2.default.createElement(
+                'div',
+                { className: 'p-5' },
+                _react2.default.createElement('div', { className: 'bg-circle-3 bg-circle' }),
+                _react2.default.createElement('div', { className: 'bg-circle-4 bg-circle' }),
+                _react2.default.createElement(
+                  'h2',
+                  { className: 'display-4 enjoy' },
+                  'Enjoy! Our Menus'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'menuList' },
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'lunch menu'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'dinner menu'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'sushi'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'desserts'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'wine list'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'martinis'
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Menus;
+}(_react2.default.Component);
+
+exports.default = Menus;
+
+
+var app = document.getElementById('app');
+var menus = document.getElementById('menus');
+
+/***/ }),
+
+/***/ 232:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -355,7 +482,7 @@ var nav = document.getElementById('navbar');
 
 /***/ }),
 
-/***/ 232:
+/***/ 233:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -371,7 +498,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -454,7 +581,7 @@ var sec1 = document.getElementById('section1');
 
 /***/ }),
 
-/***/ 233:
+/***/ 234:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -470,7 +597,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -550,7 +677,7 @@ var sec2 = document.getElementById('section2');
 
 /***/ }),
 
-/***/ 234:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -566,7 +693,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -646,7 +773,7 @@ var sec3 = document.getElementById('section3');
 
 /***/ }),
 
-/***/ 236:
+/***/ 237:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -662,13 +789,13 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactGoogleMaps = __webpack_require__(130);
 
-var _Navbar = __webpack_require__(231);
+var _Navbar = __webpack_require__(232);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
@@ -676,17 +803,21 @@ var _Header = __webpack_require__(229);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Section = __webpack_require__(232);
+var _Section = __webpack_require__(233);
 
 var _Section2 = _interopRequireDefault(_Section);
 
-var _Section3 = __webpack_require__(233);
+var _Section3 = __webpack_require__(234);
 
 var _Section4 = _interopRequireDefault(_Section3);
 
-var _Section5 = __webpack_require__(234);
+var _Section5 = __webpack_require__(235);
 
 var _Section6 = _interopRequireDefault(_Section5);
+
+var _Menus = __webpack_require__(231);
+
+var _Menus2 = _interopRequireDefault(_Menus);
 
 var _Maps = __webpack_require__(230);
 
@@ -727,6 +858,7 @@ var Layout = function (_React$Component) {
         _react2.default.createElement(_Section2.default, null),
         _react2.default.createElement(_Section4.default, null),
         _react2.default.createElement(_Section6.default, null),
+        _react2.default.createElement(_Menus2.default, null),
         _react2.default.createElement(_Maps2.default, {
           loadingElement: _react2.default.createElement('div', { style: { height: '100%' } }),
           containerElement: _react2.default.createElement('div', { style: { height: '400px' } }),
@@ -748,4 +880,4 @@ _reactDom2.default.render(_react2.default.createElement(Layout, null), app);
 
 /***/ })
 
-},[236]);
+},[237]);
