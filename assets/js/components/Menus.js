@@ -6,6 +6,11 @@ export default class Menus extends React.Component{
       super();
       this.state ={name: "Octavius"};
     }
+    randomPics(){
+      let pic1 = document.getElementsByClassName('square1').src="04.jpg";
+      let listPics = [pic1];
+    return listPics[Math.floor(Math.random() * listPics.length)];
+    }
     
     render(){
       return(
@@ -14,10 +19,10 @@ export default class Menus extends React.Component{
         <div className="row align-items-center">
           <div className="col-lg-6 order-lg-2">
             <div className="p-5 imgGroup">
-              <img className="img-fluid rounded-0" src="01.jpg" width="200px" height="120px" alt="" />
-              <img className="img-fluid rounded-0" src="01.jpg" width="200px" height="120px" alt="" />
-              <img className="img-fluid rounded-0" src="01.jpg" width="200px" height="120px" alt="" />
-              <img className="img-fluid rounded-0" src="01.jpg" width="200px" height="120px" alt="" />
+              <img className="img-fluid rounded-0 square1" src="04.jpg"  alt="" />
+              <img className="img-fluid rounded-0 square2" src="08.jpg"  alt="" />
+              <img className="img-fluid rounded-0 square3" src="09.jpg"  alt="" />
+              <img className="img-fluid rounded-0 square4" src="10.jpg"  alt="" />
             </div>
           </div>
           <div className="col-lg-6 order-lg-1">

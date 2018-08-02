@@ -8,6 +8,7 @@ import Section2 from '../components/Section2.js'
 import Section3 from '../components/Section3.js'
 import Menus from '../components/Menus.js'
 import Maps from '../components/Maps.js'
+import Reservations from '../components/Reservations.js'
 import Footer from '../components/Footer.js'
 
 export default class Layout extends React.Component{
@@ -30,6 +31,7 @@ export default class Layout extends React.Component{
         loadingElement={<div style={{ height: `100%` }} />}
         containerElement={<div style={{ height: `400px` }} />}
         mapElement={<div style={{ height: `100%` }} />}/>
+        <Reservations />
         <Footer />
         </div>
       )

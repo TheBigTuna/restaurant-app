@@ -145,7 +145,7 @@ header.masthead .bg-circle-3 {
   opacity: 1;
   height: 20rem;
   width: 20rem;
-  bottom: -10rem;
+  bottom: -8rem;
   right: 5%;
 }
 
@@ -239,7 +239,7 @@ header.masthead .bg-circle-4 {
   width: 180px;
   float: left;
   text-align: center;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   letter-spacing: 2px;
 
 }
@@ -251,5 +251,7 @@ header.masthead .bg-circle-4 {
 }
 
 .imgGroup img{
-  margin: 4px;
+  margin: 6px;
+  width: 200px;
+  height: 180px;
 }

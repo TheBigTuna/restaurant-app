@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -86,7 +86,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -178,7 +178,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -244,7 +244,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -273,6 +273,13 @@ var Menus = function (_React$Component) {
   }
 
   _createClass(Menus, [{
+    key: 'randomPics',
+    value: function randomPics() {
+      var pic1 = document.getElementsByClassName('square1').src = "04.jpg";
+      var listPics = [pic1];
+      return listPics[Math.floor(Math.random() * listPics.length)];
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -290,10 +297,10 @@ var Menus = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'p-5 imgGroup' },
-                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' }),
-                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' }),
-                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' }),
-                _react2.default.createElement('img', { className: 'img-fluid rounded-0', src: '01.jpg', width: '200px', height: '120px', alt: '' })
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0 square1', src: '04.jpg', alt: '' }),
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0 square2', src: '08.jpg', alt: '' }),
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0 square3', src: '09.jpg', alt: '' }),
+                _react2.default.createElement('img', { className: 'img-fluid rounded-0 square4', src: '10.jpg', alt: '' })
               )
             ),
             _react2.default.createElement(
@@ -376,7 +383,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -499,7 +506,134 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(17);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Reservations = function (_React$Component) {
+  _inherits(Reservations, _React$Component);
+
+  function Reservations() {
+    _classCallCheck(this, Reservations);
+
+    var _this = _possibleConstructorReturn(this, (Reservations.__proto__ || Object.getPrototypeOf(Reservations)).call(this));
+
+    _this.state = { name: "Octavius" };
+    return _this;
+  }
+
+  _createClass(Reservations, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'reservations py-5 bg-black' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'h3',
+              null,
+              'For reservations call (313) 555-1212'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row align-items-center' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'div',
+                { className: 'p-5' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Hours'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lunch',
+                  _react2.default.createElement('br', null),
+                  'Monday - Friday: 11:30pm - 2:30pm',
+                  _react2.default.createElement('br', null),
+                  'Dinner',
+                  _react2.default.createElement('br', null),
+                  'Monday - Thursday: 5:00pm - 10:00pm',
+                  _react2.default.createElement('br', null),
+                  'Friday: 5:00pm - 10:30pm',
+                  _react2.default.createElement('br', null),
+                  'Saturday: 12:00pm - 10:30pm',
+                  _react2.default.createElement('br', null),
+                  'Sunday: 12:00pm - 10:00pm',
+                  _react2.default.createElement('br', null)
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'div',
+                { className: 'p-5' },
+                _react2.default.createElement(
+                  'h2',
+                  { className: 'display-4' },
+                  'Dine With Us!'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'The Polar Bay  was built in 1929, a gift from Charles Rogers to his future wife Harriet Thornton and, is a resturant and sushi bar. We specialise in the best produce from Gwynedd, Wales and the world and offer breakfast, lunch, fantastically presented afternoon teas and evening meals based on tapas and other inspirational meals.'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Reservations;
+}(_react2.default.Component);
+
+exports.default = Reservations;
+
+
+var app = document.getElementById('app');
+var reservations = document.getElementById('reservations');
+
+/***/ }),
+
+/***/ 234:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -586,7 +720,7 @@ var sec1 = document.getElementById('section1');
 
 /***/ }),
 
-/***/ 234:
+/***/ 235:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -598,7 +732,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -644,7 +778,7 @@ var Section2 = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'p-5' },
-                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '04.jpg', alt: '' })
+                _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: '07.jpg', alt: '' })
               )
             ),
             _react2.default.createElement(
@@ -682,7 +816,7 @@ var sec2 = document.getElementById('section2');
 
 /***/ }),
 
-/***/ 235:
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -694,7 +828,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -778,7 +912,7 @@ var sec3 = document.getElementById('section3');
 
 /***/ }),
 
-/***/ 237:
+/***/ 238:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -790,7 +924,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -808,15 +942,15 @@ var _Header = __webpack_require__(229);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Section = __webpack_require__(233);
+var _Section = __webpack_require__(234);
 
 var _Section2 = _interopRequireDefault(_Section);
 
-var _Section3 = __webpack_require__(234);
+var _Section3 = __webpack_require__(235);
 
 var _Section4 = _interopRequireDefault(_Section3);
 
-var _Section5 = __webpack_require__(235);
+var _Section5 = __webpack_require__(236);
 
 var _Section6 = _interopRequireDefault(_Section5);
 
@@ -827,6 +961,10 @@ var _Menus2 = _interopRequireDefault(_Menus);
 var _Maps = __webpack_require__(230);
 
 var _Maps2 = _interopRequireDefault(_Maps);
+
+var _Reservations = __webpack_require__(233);
+
+var _Reservations2 = _interopRequireDefault(_Reservations);
 
 var _Footer = __webpack_require__(228);
 
@@ -868,6 +1006,7 @@ var Layout = function (_React$Component) {
           loadingElement: _react2.default.createElement('div', { style: { height: '100%' } }),
           containerElement: _react2.default.createElement('div', { style: { height: '400px' } }),
           mapElement: _react2.default.createElement('div', { style: { height: '100%' } }) }),
+        _react2.default.createElement(_Reservations2.default, null),
         _react2.default.createElement(_Footer2.default, null)
       );
     }
@@ -885,4 +1024,4 @@ _reactDom2.default.render(_react2.default.createElement(Layout, null), app);
 
 /***/ })
 
-},[237]);
+},[238]);
