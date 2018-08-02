@@ -537,76 +537,7 @@ var Reservations = function (_React$Component) {
   _createClass(Reservations, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          { className: 'reservations py-5 bg-black' },
-          _react2.default.createElement(
-            'div',
-            { className: 'container' },
-            _react2.default.createElement(
-              'h3',
-              null,
-              'For reservations call (313) 555-1212'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row align-items-center' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5' },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Hours'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lunch',
-                  _react2.default.createElement('br', null),
-                  'Monday - Friday: 11:30pm - 2:30pm',
-                  _react2.default.createElement('br', null),
-                  'Dinner',
-                  _react2.default.createElement('br', null),
-                  'Monday - Thursday: 5:00pm - 10:00pm',
-                  _react2.default.createElement('br', null),
-                  'Friday: 5:00pm - 10:30pm',
-                  _react2.default.createElement('br', null),
-                  'Saturday: 12:00pm - 10:30pm',
-                  _react2.default.createElement('br', null),
-                  'Sunday: 12:00pm - 10:00pm',
-                  _react2.default.createElement('br', null)
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5' },
-                _react2.default.createElement(
-                  'h2',
-                  { className: 'display-4' },
-                  'Dine With Us!'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'The Polar Bay  was built in 1929, a gift from Charles Rogers to his future wife Harriet Thornton and, is a resturant and sushi bar. We specialise in the best produce from Gwynedd, Wales and the world and offer breakfast, lunch, fantastically presented afternoon teas and evening meals based on tapas and other inspirational meals.'
-                )
-              )
-            )
-          )
-        )
-      );
+      return _react2.default.createElement('div', null);
     }
   }]);
 
