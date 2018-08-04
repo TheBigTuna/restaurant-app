@@ -48,7 +48,7 @@ var Footer = function (_React$Component) {
         null,
         _react2.default.createElement(
           'footer',
-          { className: 'py-5 bg-black' },
+          { className: 'py-5 bg-black', id: 'footerSec' },
           _react2.default.createElement(
             'div',
             { className: 'container' },
@@ -213,11 +213,15 @@ var Maps = function (_React$Component) {
     value: function render() {
       var markers = this.props.markers || [];
       return _react2.default.createElement(
-        _reactGoogleMaps.GoogleMap,
-        {
-          defaultZoom: 12,
-          defaultCenter: { lat: 42.416, lng: -82.920 } },
-        _react2.default.createElement(_reactGoogleMaps.Marker, { position: { lat: 42.416, lng: -82.920 } })
+        'div',
+        { id: 'locationSec' },
+        _react2.default.createElement(
+          _reactGoogleMaps.GoogleMap,
+          {
+            defaultZoom: 12,
+            defaultCenter: { lat: 42.416, lng: -82.920 } },
+          _react2.default.createElement(_reactGoogleMaps.Marker, { position: { lat: 42.416, lng: -82.920 } })
+        )
       );
     }
   }]);
@@ -287,7 +291,7 @@ var Menus = function (_React$Component) {
         null,
         _react2.default.createElement(
           'div',
-          { className: 'container' },
+          { className: 'container', id: 'menuSec' },
           _react2.default.createElement(
             'div',
             { className: 'row align-items-center' },
@@ -444,7 +448,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#' },
+                    { className: 'nav-link', href: '#menuSec' },
                     'Menus'
                   )
                 ),
@@ -453,7 +457,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#' },
+                    { className: 'nav-link', href: '#aboutSec' },
                     'About'
                   )
                 ),
@@ -462,7 +466,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#' },
+                    { className: 'nav-link', href: '#locationSec' },
                     'Location'
                   )
                 ),
@@ -471,7 +475,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#' },
+                    { className: 'nav-link', href: '#contactSec' },
                     'Contact'
                   )
                 )
@@ -537,7 +541,68 @@ var Reservations = function (_React$Component) {
   _createClass(Reservations, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('div', null);
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'bg-black', id: 'contactSec' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row align-items-center' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-6 order-lg-2' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'p-5' },
+                  _react2.default.createElement(
+                    'h6',
+                    { className: 'display-4' },
+                    'HOURS'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Lunch Monday - Friday: 11:30pm - 2:30pm',
+                    _react2.default.createElement('br', null),
+                    'Dinner Monday - Thursday: 5:00pm - 10:00pm Friday: 5:00pm - 10:30pm',
+                    _react2.default.createElement('br', null),
+                    'Saturday: 12:00pm - 10:30pm Sunday: 12:00pm - 10:00pm'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-6 order-lg-1' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'p-5' },
+                  _react2.default.createElement(
+                    'h6',
+                    { className: 'display-4' },
+                    'LOCATION'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'The Polar Bay Restuarant and Sushi Bar',
+                    _react2.default.createElement('br', null),
+                    '1234 main st.',
+                    _react2.default.createElement('br', null),
+                    'Detroit, MI 12345',
+                    _react2.default.createElement('br', null),
+                    'Phone: 313-555-1212'
+                  )
+                )
+              )
+            )
+          )
+        )
+      );
     }
   }]);
 
@@ -615,7 +680,7 @@ var Section1 = function (_React$Component) {
             ),
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-6 order-lg-1' },
+              { className: 'col-lg-6 order-lg-1', id: 'aboutSec' },
               _react2.default.createElement(
                 'div',
                 { className: 'p-5' },

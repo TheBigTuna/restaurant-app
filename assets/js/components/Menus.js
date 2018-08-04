@@ -15,7 +15,7 @@ export default class Menus extends React.Component{
     render(){
       return(
         <div>
-         <div className="container">
+         <div className="container" id="menuSec">
         <div className="row align-items-center">
           <div className="col-lg-6 order-lg-2">
             <div className="p-5 imgGroup">

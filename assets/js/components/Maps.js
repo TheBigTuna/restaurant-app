@@ -11,11 +11,13 @@ import {  withScriptjs, withGoogleMap, GoogleMap, Marker} from 'react-google-map
     render(){
       let markers = this.props.markers || []
       return(
+    <div id="locationSec">
          <GoogleMap
     defaultZoom={12}
     defaultCenter={{ lat: 42.416, lng: -82.920 }}>
     <Marker position={{ lat: 42.416, lng: -82.920 }}/>
   </GoogleMap>
+  </div>
       )
     }
 }

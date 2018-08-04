@@ -20,16 +20,16 @@ export default class Navbar extends React.Component{
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">Menus</a>
+              <a className="nav-link" href="#menuSec">Menus</a>
             </li>
             <li className="nav-item">
-    <a className="nav-link" href="#">About</a>
+    <a className="nav-link" href="#aboutSec">About</a>
             </li>
              <li className="nav-item">
-              <a className="nav-link" href="#">Location</a>
+              <a className="nav-link" href="#locationSec">Location</a>
             </li>
             <li className="nav-item">
-    <a className="nav-link" href="#">Contact</a>
+    <a className="nav-link" href="#contactSec">Contact</a>
             </li>
           </ul>
         </div>

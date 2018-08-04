@@ -20,7 +20,7 @@ export default class Section1 extends React.Component{
               <img className="img-fluid rounded-circle img1" src="https://shiro-restaurant.com/wp-content/uploads/2017/02/salmon-on-the-beach.jpg" alt="" />
             </div>
           </div>
-          <div className="col-lg-6 order-lg-1">
+          <div className="col-lg-6 order-lg-1" id="aboutSec">
             <div className="p-5">
               <h2 className="display-4">Welcome To <br /> The Polar Bay</h2>
               <p>Our varied menu offers breakfast, lunch, luxury afternoon tea and evening meals based on tapas in addition to other 
