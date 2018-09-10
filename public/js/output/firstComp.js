@@ -284,72 +284,6 @@ var Menus = function (_React$Component) {
       return listPics[Math.floor(Math.random() * listPics.length)];
     }
   }, {
-    key: 'showLunch',
-    value: function showLunch() {
-      document.getElementById('menuLunch').style.display = "block";
-      document.getElementById('menuImgs').style.display = "none";
-      document.getElementById('menuDinner').style.display = "none";
-      document.getElementById('menuSushi').style.display = "none";
-      document.getElementById('menuDesserts').style.display = "none";
-      document.getElementById('menuWine').style.display = "none";
-      document.getElementById('menuMartinis').style.display = "none";
-    }
-  }, {
-    key: 'showDinner',
-    value: function showDinner() {
-      document.getElementById('menuDinner').style.display = "block";
-      document.getElementById('menuImgs').style.display = "none";
-      document.getElementById('menuLunch').style.display = "none";
-      document.getElementById('menuSushi').style.display = "none";
-      document.getElementById('menuDesserts').style.display = "none";
-      document.getElementById('menuWine').style.display = "none";
-      document.getElementById('menuMartinis').style.display = "none";
-    }
-  }, {
-    key: 'showSushi',
-    value: function showSushi() {
-      document.getElementById('menuSushi').style.display = "block";
-      document.getElementById('menuDinner').style.display = "none";
-      document.getElementById('menuImgs').style.display = "none";
-      document.getElementById('menuLunch').style.display = "none";
-      document.getElementById('menuDesserts').style.display = "none";
-      document.getElementById('menuWine').style.display = "none";
-      document.getElementById('menuMartinis').style.display = "none";
-    }
-  }, {
-    key: 'showDesserts',
-    value: function showDesserts() {
-      document.getElementById('menuDesserts').style.display = "block";
-      document.getElementById('menuSushi').style.display = "none";
-      document.getElementById('menuDinner').style.display = "none";
-      document.getElementById('menuImgs').style.display = "none";
-      document.getElementById('menuLunch').style.display = "none";
-      document.getElementById('menuWine').style.display = "none";
-      document.getElementById('menuMartinis').style.display = "none";
-    }
-  }, {
-    key: 'showWine',
-    value: function showWine() {
-      document.getElementById('menuWine').style.display = "block";
-      document.getElementById('menuDesserts').style.display = "none";
-      document.getElementById('menuSushi').style.display = "none";
-      document.getElementById('menuDinner').style.display = "none";
-      document.getElementById('menuImgs').style.display = "none";
-      document.getElementById('menuLunch').style.display = "none";
-      document.getElementById('menuMartinis').style.display = "none";
-    }
-  }, {
-    key: 'showMartinis',
-    value: function showMartinis() {
-      document.getElementById('menuMartinis').style.display = "block";
-      document.getElementById('menuWine').style.display = "none";
-      document.getElementById('menuDesserts').style.display = "none";
-      document.getElementById('menuSushi').style.display = "none";
-      document.getElementById('menuDinner').style.display = "none";
-      document.getElementById('menuImgs').style.display = "none";
-      document.getElementById('menuLunch').style.display = "none";
-    }
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -363,7 +297,7 @@ var Menus = function (_React$Component) {
             { className: 'row align-items-center' },
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-6 order-lg-2', id: 'menuImgs' },
+              { className: 'col-lg-6 order-lg-2' },
               _react2.default.createElement(
                 'div',
                 { className: 'p-5 imgGroup' },
@@ -371,196 +305,6 @@ var Menus = function (_React$Component) {
                 _react2.default.createElement('img', { className: 'img-fluid rounded-0 square2', src: '08.jpg', alt: '' }),
                 _react2.default.createElement('img', { className: 'img-fluid rounded-0 square3', src: '09.jpg', alt: '' }),
                 _react2.default.createElement('img', { className: 'img-fluid rounded-0 square4', src: '10.jpg', alt: '' })
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6 order-lg-2', id: 'menuLunch' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5 imgGroup' },
-                _react2.default.createElement(
-                  'h2',
-                  { className: 'text-center' },
-                  'Lunch'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6 order-lg-2', id: 'menuDinner' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5 imgGroup' },
-                _react2.default.createElement(
-                  'h2',
-                  { className: 'text-center' },
-                  'Dinner'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6 order-lg-2', id: 'menuSushi' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5 imgGroup' },
-                _react2.default.createElement(
-                  'h2',
-                  { className: 'text-center' },
-                  'Sushi'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6 order-lg-2', id: 'menuDesserts' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5 imgGroup' },
-                _react2.default.createElement(
-                  'h2',
-                  { className: 'text-center' },
-                  'Desserts'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Creme Brule'
-                ),
-                _react2.default.createElement('p', null),
-                _react2.default.createElement('h6', null),
-                _react2.default.createElement('p', null),
-                _react2.default.createElement('h6', null),
-                _react2.default.createElement('p', null),
-                _react2.default.createElement('h6', null),
-                _react2.default.createElement('p', null)
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6 order-lg-2', id: 'menuWine' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5 imgGroup' },
-                _react2.default.createElement(
-                  'h2',
-                  { className: 'text-center' },
-                  'Wine'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Prosecco'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'La Marca, Veneto'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Sauvignon Blanc'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Charles Krug, Napa Valley'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Sancerre'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Chateau de Sancerre, Lorie'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Chardonnay'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Kunde, Sonoma County'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Pinot Noir'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Meiomi, Sonoma Coast'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6 order-lg-2', id: 'menuMartinis' },
-              _react2.default.createElement(
-                'div',
-                { className: 'p-5 imgGroup' },
-                _react2.default.createElement(
-                  'h2',
-                  { className: 'text-center' },
-                  'Martinis'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Shirotini'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Harushika sake, Chambord Raspberry Liqueur, Absolut Kurant'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Shiro Cosmo'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Absolut Kurant Vodka, Cointreau, Cranberry Juice'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Asian Peach'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Sushin Sake, Peach Snapps, Sour Mix'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Asian Berry'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Sushin Sake, Chambord Raspberry Liqueur, Sour Mix'
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Upside Down Pineappletini'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Stoli Vanilla Vodka, Pineapple Juice'
-                )
               )
             ),
             _react2.default.createElement(
@@ -583,32 +327,32 @@ var Menus = function (_React$Component) {
                   { className: 'menuList' },
                   _react2.default.createElement(
                     'li',
-                    { onClick: this.showLunch },
+                    null,
                     'lunch menu'
                   ),
                   _react2.default.createElement(
                     'li',
-                    { onClick: this.showDinner },
+                    null,
                     'dinner menu'
                   ),
                   _react2.default.createElement(
                     'li',
-                    { onClick: this.showSushi },
+                    null,
                     'sushi'
                   ),
                   _react2.default.createElement(
                     'li',
-                    { onClick: this.showDesserts },
+                    null,
                     'desserts'
                   ),
                   _react2.default.createElement(
                     'li',
-                    { onClick: this.showWine },
+                    null,
                     'wine list'
                   ),
                   _react2.default.createElement(
                     'li',
-                    { onClick: this.showMartinis },
+                    null,
                     'martinis'
                   )
                 )

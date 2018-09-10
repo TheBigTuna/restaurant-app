@@ -1,4 +1,3 @@
-
 const path = require('path');
 const webpack = require('webpack')
 
@@ -26,15 +25,6 @@ module.exports = {
             'stage-0', 'react'
           ]
         }
-      },
-       {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
       },
       {
             test: /\.scss$/,

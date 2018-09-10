@@ -51,6 +51,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "file-loader": "^1.1.11",
+    "uglify-js-brunch": "^2.10.0",
     "url-loader": "^1.0.1"
   }
 }
