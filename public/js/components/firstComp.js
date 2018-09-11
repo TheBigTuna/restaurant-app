@@ -383,6 +383,56 @@ var Menus = function (_React$Component) {
                   'h2',
                   { className: 'text-center' },
                   'Lunch'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Vegetable Tempura'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lightly Battered and Fried Vegetables; Served with Tempura Sauce'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Salmon Teriyaki'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Char grilled Salmon with Teriyaki Sauce and Sauteed Vegetables, Other compartments change daily'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Champong Ramen'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Spicy Chicken Broth, with Calamari, Black Mussles, Onion, Napa, and Cabbage ($2 extra to order with thick noodles)'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Nabe Yaki Udon'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Fish Broth with Cabbage, Seaweed, Fish Cake, Shrimp Tempura, Tempura Flakes, Hard Boiled Egg and Chicken'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Chilean Seabass'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Served with a Miso Cream Sauce, Sauteed Vegetables and Spanish Rice'
                 )
               )
             ),
@@ -396,6 +446,66 @@ var Menus = function (_React$Component) {
                   'h2',
                   { className: 'text-center' },
                   'Dinner'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Miso Soup'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Fermented Soy Bean Paste Broth'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Gyoza'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  '6 pieces of Japanese Pork Dumplings, Served Steamed, Pan-Fried, or Deep-Fried'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Alaskan Salmon'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Honey glazed alaskan salmon with a miso cream sauce, served with sauteed vegetables and Spanish rice.'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Hoisin-Marinated Rack of Lamb'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Hoisin Soy Marinated, Served with Mashed Potatoes and Sauteed Vegetables'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Chilean Seabass'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Served with a Miso Cream Sauce, Sauteed Vegetables and Spanish Rice'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Tempura Udon'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Fish Broth with Cabbage, Seaweed, Fish Cake, Shrimp Tempura, Tempura Flakes and Hard Boiled Egg'
                 )
               )
             ),
@@ -409,6 +519,56 @@ var Menus = function (_React$Component) {
                   'h2',
                   { className: 'text-center' },
                   'Sushi'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Maguro'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Tuna'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Hamachi'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Yellow Tail'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Torro'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Fatty Tuna'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Ebi'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Shrimp'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Ikura'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Salmon Roe'
                 )
               )
             ),
@@ -428,13 +588,21 @@ var Menus = function (_React$Component) {
                   null,
                   'Creme Brule'
                 ),
-                _react2.default.createElement('p', null),
-                _react2.default.createElement('h6', null),
-                _react2.default.createElement('p', null),
-                _react2.default.createElement('h6', null),
-                _react2.default.createElement('p', null),
-                _react2.default.createElement('h6', null),
-                _react2.default.createElement('p', null)
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Dark Chocolate Mousse'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Raspberry Passion Sponge Cake'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Tiramisu'
+                )
               )
             ),
             _react2.default.createElement(
