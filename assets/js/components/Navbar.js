@@ -13,23 +13,20 @@ export default class Navbar extends React.Component{
         <div>
         <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div className="container">
-        <p className="navbar-brand">The Polar Bay</p>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <p className="navbar-brand" id="navText1">The Polar Bay</p>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#menuSec">Menus</a>
-            </li>
-            <li className="nav-item">
-    <a className="nav-link" href="#aboutSec">About</a>
+            <a className="nav-link" href="#aboutSec" id="navList1">About</a>
             </li>
              <li className="nav-item">
-              <a className="nav-link" href="#locationSec">Location</a>
+              <a className="nav-link" href="#menuSec" id="navList2">Menus</a>
+            </li>
+             <li className="nav-item">
+              <a className="nav-link" href="#locationSec" id="navList3">Location</a>
             </li>
             <li className="nav-item">
-    <a className="nav-link" href="#contactSec">Contact</a>
+             <a className="nav-link" href="#contactSec" id="navList4">Contact</a>
             </li>
           </ul>
         </div>

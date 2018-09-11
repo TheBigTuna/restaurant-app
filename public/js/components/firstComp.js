@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 228:
+/***/ 160:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12,11 +12,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -74,7 +74,7 @@ var footer = document.getElementById('footer');
 
 /***/ }),
 
-/***/ 229:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86,11 +86,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -166,7 +166,7 @@ var head = document.getElementById('header');
 
 /***/ }),
 
-/***/ 230:
+/***/ 162:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -178,15 +178,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactGoogleMaps = __webpack_require__(130);
+var _reactGoogleMaps = __webpack_require__(87);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -214,7 +214,7 @@ var Maps = function (_React$Component) {
       var markers = this.props.markers || [];
       return _react2.default.createElement(
         'div',
-        { id: 'locationSec' },
+        null,
         _react2.default.createElement(
           _reactGoogleMaps.GoogleMap,
           {
@@ -236,7 +236,7 @@ exports.default = (0, _reactGoogleMaps.withGoogleMap)(Maps);
 
 /***/ }),
 
-/***/ 231:
+/***/ 163:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -248,11 +248,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -783,7 +783,8 @@ var Menus = function (_React$Component) {
               )
             )
           )
-        )
+        ),
+        _react2.default.createElement('div', { id: 'locationSec' })
       );
     }
   }]);
@@ -799,7 +800,7 @@ var menus = document.getElementById('menus');
 
 /***/ }),
 
-/***/ 232:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -811,11 +812,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -853,13 +854,8 @@ var Navbar = function (_React$Component) {
             { className: 'container' },
             _react2.default.createElement(
               'p',
-              { className: 'navbar-brand' },
+              { className: 'navbar-brand', id: 'navText1' },
               'The Polar Bay'
-            ),
-            _react2.default.createElement(
-              'button',
-              { className: 'navbar-toggler', type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarResponsive', 'aria-controls': 'navbarResponsive', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-              _react2.default.createElement('span', { className: 'navbar-toggler-icon' })
             ),
             _react2.default.createElement(
               'div',
@@ -872,16 +868,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#menuSec' },
-                    'Menus'
-                  )
-                ),
-                _react2.default.createElement(
-                  'li',
-                  { className: 'nav-item' },
-                  _react2.default.createElement(
-                    'a',
-                    { className: 'nav-link', href: '#aboutSec' },
+                    { className: 'nav-link', href: '#aboutSec', id: 'navList1' },
                     'About'
                   )
                 ),
@@ -890,7 +877,16 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#locationSec' },
+                    { className: 'nav-link', href: '#menuSec', id: 'navList2' },
+                    'Menus'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'nav-item' },
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'nav-link', href: '#locationSec', id: 'navList3' },
                     'Location'
                   )
                 ),
@@ -899,7 +895,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#contactSec' },
+                    { className: 'nav-link', href: '#contactSec', id: 'navList4' },
                     'Contact'
                   )
                 )
@@ -922,7 +918,7 @@ var nav = document.getElementById('navbar');
 
 /***/ }),
 
-/***/ 233:
+/***/ 165:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -934,11 +930,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1041,7 +1037,7 @@ var reservations = document.getElementById('reservations');
 
 /***/ }),
 
-/***/ 234:
+/***/ 166:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1053,11 +1049,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1140,7 +1136,7 @@ var sec1 = document.getElementById('section1');
 
 /***/ }),
 
-/***/ 235:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1152,11 +1148,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1236,7 +1232,7 @@ var sec2 = document.getElementById('section2');
 
 /***/ }),
 
-/***/ 236:
+/***/ 168:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1248,11 +1244,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1332,7 +1328,7 @@ var sec3 = document.getElementById('section3');
 
 /***/ }),
 
-/***/ 238:
+/***/ 170:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1344,49 +1340,49 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(17);
+var _reactDom = __webpack_require__(11);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactGoogleMaps = __webpack_require__(130);
+var _reactGoogleMaps = __webpack_require__(87);
 
-var _Navbar = __webpack_require__(232);
+var _Navbar = __webpack_require__(164);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Header = __webpack_require__(229);
+var _Header = __webpack_require__(161);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Section = __webpack_require__(234);
+var _Section = __webpack_require__(166);
 
 var _Section2 = _interopRequireDefault(_Section);
 
-var _Section3 = __webpack_require__(235);
+var _Section3 = __webpack_require__(167);
 
 var _Section4 = _interopRequireDefault(_Section3);
 
-var _Section5 = __webpack_require__(236);
+var _Section5 = __webpack_require__(168);
 
 var _Section6 = _interopRequireDefault(_Section5);
 
-var _Menus = __webpack_require__(231);
+var _Menus = __webpack_require__(163);
 
 var _Menus2 = _interopRequireDefault(_Menus);
 
-var _Maps = __webpack_require__(230);
+var _Maps = __webpack_require__(162);
 
 var _Maps2 = _interopRequireDefault(_Maps);
 
-var _Reservations = __webpack_require__(233);
+var _Reservations = __webpack_require__(165);
 
 var _Reservations2 = _interopRequireDefault(_Reservations);
 
-var _Footer = __webpack_require__(228);
+var _Footer = __webpack_require__(160);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -1411,11 +1407,70 @@ var Layout = function (_React$Component) {
   }
 
   _createClass(Layout, [{
+    key: 'navScroll',
+    value: function navScroll() {
+      var posTop = window.scrollTo(0, 0);
+      document.addEventListener("scroll", function () {
+        var navText1 = document.getElementById('navText1');
+        var pos = pageYOffset;
+        var navList1 = document.getElementById('navList1');
+        var navList2 = document.getElementById('navList2');
+        var navList3 = document.getElementById('navList3');
+        var navList4 = document.getElementById('navList4');
+        if (pos < 477) {
+          navList1.style.backgroundColor = "rgba(0,0,0,0)";
+          navList1.style.color = "white";
+          navList2.style.backgroundColor = "rgba(0,0,0,0)";
+          navList2.style.color = "white";
+          navList3.style.backgroundColor = "rgba(0,0,0,0)";
+          navList3.style.color = "white";
+          navList4.style.backgroundColor = "rgba(0,0,0,0)";
+          navList4.style.color = "white";
+        } else if (pos > 478 && pos < 1793) {
+          navList1.style.backgroundColor = "white";
+          navList1.style.color = "black";
+          navList2.style.backgroundColor = "rgba(0,0,0,0)";
+          navList2.style.color = "white";
+          navList3.style.backgroundColor = "rgba(0,0,0,0)";
+          navList3.style.color = "white";
+          navList4.style.backgroundColor = "rgba(0,0,0,0)";
+          navList4.style.color = "white";
+        } else if (pos > 1794 && pos < 2200) {
+          navList1.style.backgroundColor = "rgba(0,0,0,0)";
+          navList1.style.color = "white";
+          navList2.style.backgroundColor = "white";
+          navList2.style.color = "black";
+          navList3.style.backgroundColor = "rgba(0,0,0,0)";
+          navList3.style.color = "white";
+          navList4.style.backgroundColor = "rgba(0,0,0,0)";
+          navList4.style.color = "white";
+        } else if (pos > 2201 && pos < 2400) {
+          navList1.style.backgroundColor = "rgba(0,0,0,0)";
+          navList1.style.color = "white";
+          navList2.style.backgroundColor = "rgba(0,0,0,0)";
+          navList2.style.color = "white";
+          navList3.style.backgroundColor = "white";
+          navList3.style.color = "black";
+          navList4.style.backgroundColor = "rgba(0,0,0,0)";
+          navList4.style.color = "white";
+        } else {
+          navList1.style.backgroundColor = "rgba(0,0,0,0)";
+          navList1.style.color = "white";
+          navList2.style.backgroundColor = "rgba(0,0,0,0)";
+          navList2.style.color = "white";
+          navList3.style.backgroundColor = "rgba(0,0,0,0)";
+          navList3.style.color = "white";
+          navList4.style.backgroundColor = "white";
+          navList4.style.color = "black";
+        }
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { onScroll: this.navScroll() },
         _react2.default.createElement(_Navbar2.default, null),
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(_Section2.default, null),
@@ -1444,4 +1499,4 @@ _reactDom2.default.render(_react2.default.createElement(Layout, null), app);
 
 /***/ })
 
-},[238]);
+},[170]);

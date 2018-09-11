@@ -28,8 +28,8 @@ h2{
 }
 
 .navbar-custom {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -298,4 +298,17 @@ header.masthead .bg-circle-4 {
 
 #menuMartinis{
   display: none;
+}
+#menuSec h3 {
+    color: red;
+}
+#menuSec h6 {
+    font-style: Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#menuSec p {
+    font-style: Helvetica, sans-serif;
+    text-align: center;
 }
