@@ -7,9 +7,13 @@ export default class Menus extends React.Component{
       this.state ={name: "Octavius"};
     }
     randomPics(){
-      let pic1 = document.getElementsByClassName('square1').src="04.jpg";
-      let listPics = [pic1];
-    return listPics[Math.floor(Math.random() * listPics.length)];
+      let pic1 = document.getElementsByClassName('square1');
+      let pic2 =  document.getElementsByClassName('square2');
+      let pic3 =  document.getElementsByClassName('square3');
+      let pic4 =  document.getElementsByClassName('square4');
+      let listPics = [pic1,pic2,pic3,pic4];
+      let random = listPics[Math.floor(Math.random() * listPics.length)];
+      return random;
     }
     showLunch(){
       document.getElementById('menuLunch').style.display="block";
@@ -68,14 +72,15 @@ export default class Menus extends React.Component{
     render(){
       return(
         <div>
+        {this.randomPics()}
          <div className="container" id="menuSec">
         <div className="row align-items-center">
           <div className="col-lg-6 order-lg-2" id="menuImgs">
             <div className="p-5 imgGroup">
-              <img className="img-fluid rounded-0 square1" src="04.jpg"  alt="" />
-              <img className="img-fluid rounded-0 square2" src="08.jpg"  alt="" />
-              <img className="img-fluid rounded-0 square3" src="09.jpg"  alt="" />
-              <img className="img-fluid rounded-0 square4" src="10.jpg"  alt="" />
+              <img className="img-fluid rounded-0 square1" src="04.jpg" id="menuImg1" alt="" />
+              <img className="img-fluid rounded-0 square2" src="08.jpg" id="menuImg2"  alt="" />
+              <img className="img-fluid rounded-0 square3" src="09.jpg" id="menuImg3" alt="" />
+              <img className="img-fluid rounded-0 square4" src="10.jpg" id="menuImg4" alt="" />
             </div>
           </div>
           <div className="col-lg-6 order-lg-2" id="menuLunch">

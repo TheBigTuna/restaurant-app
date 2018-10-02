@@ -10,6 +10,8 @@ import Menus from '../components/Menus.js'
 import Maps from '../components/Maps.js'
 import Reservations from '../components/Reservations.js'
 import Footer from '../components/Footer.js'
+import Load from '../Components/Load.js'
+
 
 export default class Layout extends React.Component{
     constructor(){
@@ -76,10 +78,28 @@ export default class Layout extends React.Component{
       navList4.style.color="black";
      }
     });
+    
      }
+     
+      showRestaurant() {
+            window.addEventListener("load", function(event) {
+             let loadContainer = document.getElementsByClassName("loadContainer")[0];
+             let restaurantContainer = document.getElementsByClassName("restaurantContainer")[0];
+             loadContainer.classList.remove('block');
+             loadContainer.classList.add('none');
+             restaurantContainer.classList.remove('none');
+             restaurantContainer.classList.add('block');
+        });
+      }
     
     render(){
       return(
+        <div>
+        {this.showRestaurant()}
+        <div className="loadContainer block">
+        <Load  />
+        </div >
+        <div className="restaurantContainer none">
         <div onScroll={this.navScroll()}>
         <Navbar />
         <Header />
@@ -93,6 +113,8 @@ export default class Layout extends React.Component{
         mapElement={<div style={{ height: `100%` }} />}/>
         <Reservations />
         <Footer />
+        </div>
+        </div>
         </div>
       )
     }
