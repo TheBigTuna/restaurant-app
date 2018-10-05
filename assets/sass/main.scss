@@ -57,13 +57,23 @@ h2{
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
   opacity: 1;
-  background-image: url('../05.jpg');
+  // background-image: url('../05.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+}
+
+header.masthead img{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  overflow: hidden;
 }
-
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
@@ -161,6 +171,11 @@ header.masthead .bg-circle-4 {
   right: 35%;
 }
 
+@media (max-width: 522px) {
+  header.masthead img{
+ height: 500px;
+  }
+}
 
 
 @media (min-width: 992px) {
@@ -361,7 +376,6 @@ header.masthead .bg-circle-4 {
     height: 5.0em;
     width: 5.0em;
     position: relative;
-    right: 2.5em;
     top: 1em;
     
     &:nth-child(2) {

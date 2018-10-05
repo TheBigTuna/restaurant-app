@@ -95,6 +95,7 @@ export default class Layout extends React.Component{
     render(){
       return(
         <div>
+        {this.showRestaurant()}
         <div className="loadContainer block">
         <Load  />
         </div >

@@ -190,6 +190,7 @@ var Header = function (_React$Component) {
         _react2.default.createElement(
           'header',
           { className: 'masthead text-center text-white' },
+          _react2.default.createElement('img', { src: '../05.jpg' }),
           _react2.default.createElement(
             'div',
             { className: 'masthead-content' },
@@ -1558,6 +1559,7 @@ var Layout = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
+        this.showRestaurant(),
         _react2.default.createElement(
           'div',
           { className: 'loadContainer block' },

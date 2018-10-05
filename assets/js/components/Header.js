@@ -11,6 +11,7 @@ export default class Header extends React.Component{
       return(
         <div>
         <header className="masthead text-center text-white">
+        <img src="../05.jpg"/>
       <div className="masthead-content">
         <div className="container">
           <h1 className="masthead-heading mb-0">The Polar Bay</h1>
