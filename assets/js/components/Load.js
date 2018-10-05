@@ -11,7 +11,11 @@ export default class Load extends React.Component{
     
     render(){
       return(
-    <ReactLoading type={'bars'} color={'#B23B14'} height={'40%'} width={'40%'} />
+        <div className="loading-dots">
+        <div className="loading-dots--dot"></div>
+        <div className="loading-dots--dot"></div>
+        <div className="loading-dots--dot"></div>
+        </div>
       )
     }
 }
