@@ -904,10 +904,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Navbar = function (_React$Component) {
   _inherits(Navbar, _React$Component);
 
-  function Navbar() {
+  function Navbar(props) {
     _classCallCheck(this, Navbar);
 
-    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
 
     _this.state = { name: "Octavius" };
     return _this;
@@ -941,7 +941,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#aboutSec', id: 'navList1' },
+                    { className: 'nav-link', id: 'navList1', onClick: this.props.scrollAbout },
                     'About'
                   )
                 ),
@@ -950,7 +950,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#menuSec', id: 'navList2' },
+                    { className: 'nav-link', id: 'navList2', onClick: this.props.scrollMenu },
                     'Menus'
                   )
                 ),
@@ -959,7 +959,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#locationSec', id: 'navList3' },
+                    { className: 'nav-link', id: 'navList3', onClick: this.props.scrollLocation },
                     'Location'
                   )
                 ),
@@ -968,7 +968,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', href: '#contactSec', id: 'navList4' },
+                    { className: 'nav-link', id: 'navList4', onClick: this.props.scrollContact },
                     'Contact'
                   )
                 )
@@ -1529,7 +1529,7 @@ var Layout = function (_React$Component) {
           navList3.style.color = "black";
           navList4.style.backgroundColor = "rgba(0,0,0,0)";
           navList4.style.color = "white";
-        } else {
+        } else if (pos > 2401) {
           navList1.style.backgroundColor = "rgba(0,0,0,0)";
           navList1.style.color = "white";
           navList2.style.backgroundColor = "rgba(0,0,0,0)";
@@ -1554,6 +1554,38 @@ var Layout = function (_React$Component) {
       });
     }
   }, {
+    key: 'scrollAbout',
+    value: function scrollAbout() {
+      window.scrollTo({
+        top: 482,
+        behavior: "smooth"
+      });
+    }
+  }, {
+    key: 'scrollMenu',
+    value: function scrollMenu() {
+      window.scrollTo({
+        top: 1798,
+        behavior: "smooth"
+      });
+    }
+  }, {
+    key: 'scrollLocation',
+    value: function scrollLocation() {
+      window.scrollTo({
+        top: 2204,
+        behavior: "smooth"
+      });
+    }
+  }, {
+    key: 'scrollContact',
+    value: function scrollContact() {
+      window.scrollTo({
+        top: 2404,
+        behavior: "smooth"
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -1571,7 +1603,12 @@ var Layout = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { onScroll: this.navScroll() },
-            _react2.default.createElement(_Navbar2.default, null),
+            _react2.default.createElement(_Navbar2.default, {
+              scrollAbout: this.scrollAbout,
+              scrollMenu: this.scrollMenu,
+              scrollLocation: this.scrollLocation,
+              scrollContact: this.scrollContact
+            }),
             _react2.default.createElement(_Header2.default, null),
             _react2.default.createElement(_Section2.default, null),
             _react2.default.createElement(_Section4.default, null),

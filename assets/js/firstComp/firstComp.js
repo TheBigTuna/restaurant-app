@@ -67,7 +67,7 @@ export default class Layout extends React.Component{
       navList4.style.backgroundColor="rgba(0,0,0,0)";
       navList4.style.color="white";
      }
-     else{
+     else if (pos > 2401){
       navList1.style.backgroundColor="rgba(0,0,0,0)";
       navList1.style.color="white";
       navList2.style.backgroundColor="rgba(0,0,0,0)";
@@ -91,7 +91,35 @@ export default class Layout extends React.Component{
              restaurantContainer.classList.add('block');
         });
       }
-    
+
+      scrollAbout() {
+          window.scrollTo({
+          top: 482,
+          behavior: "smooth"
+        });
+      }
+
+      scrollMenu() {
+          window.scrollTo({
+          top: 1798,
+          behavior: "smooth"
+        });
+      }
+
+      scrollLocation() {
+          window.scrollTo({
+          top: 2204,
+          behavior: "smooth"
+        });
+      }
+
+      scrollContact() {
+          window.scrollTo({
+          top: 2404,
+          behavior: "smooth"
+       });
+      }
+
     render(){
       return(
         <div>
@@ -101,7 +129,12 @@ export default class Layout extends React.Component{
         </div >
         <div className="restaurantContainer none">
         <div onScroll={this.navScroll()}>
-        <Navbar />
+        <Navbar 
+        scrollAbout = {this.scrollAbout}
+        scrollMenu = {this.scrollMenu}
+        scrollLocation = {this.scrollLocation}
+        scrollContact = {this.scrollContact}
+        />
         <Header />
         <Section1 />
         <Section2 />
